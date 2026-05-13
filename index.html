@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Curvo Pro | Workspace</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=STIX+Two+Text:wght@400;600&family=Space+Mono&family=VT323&family=Caveat&family=Press+Start+2P&family=Architects+Daughter&family=Orbitron&family=Syncopate:wght@700&family=Courier+Prime&family=Playfair+Display:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="theme-normal">
+
+  <h1>Curvo Pro</h1>
+  <p class="subtitle">MATHEMATICAL VISUALIZER</p>
+
+  <div class="app-container">
+
+    <div class="sidebar">
+
+      <div class="card">
+        <div class="section-title">Constants</div>
+
+        <div class="slider-row">
+          <label>a</label>
+          <input type="range" id="param-a" min="-10" max="10" step="0.1" value="1">
+          <span id="val-a">1</span>
+        </div>
+
+        <div class="slider-row">
+          <label>b</label>
+          <input type="range" id="param-b" min="-10" max="10" step="0.1" value="0">
+          <span id="val-b">0</span>
+        </div>
+
+        <div class="slider-row">
+          <label>c</label>
+          <input type="range" id="param-c" min="-10" max="10" step="0.1" value="0">
+          <span id="val-c">0</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-title">Functions</div>
+        <div id="eq-list"></div>
+        <button onclick="newEquation()" class="theme-btn">+ Add Function</button>
+      </div>
+
+      <div class="card">
+        <div class="section-title">History</div>
+        <div id="history-list"></div>
+      </div>
+
+    </div>
+
+    <div class="graph-box card">
+      <canvas id="graph" width="850" height="580"></canvas>
+      <div id="coords">0.00, 0.00</div>
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
