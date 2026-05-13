@@ -7,6 +7,7 @@ It focuses on dynamic graph management, modular UI design, various themes and a 
 ## 🖼️ Preview
 
 <img width="1874" height="909" alt="image" src="https://github.com/user-attachments/assets/8e181e6e-30d5-400a-8462-fa989bffcf56" />
+link - https://archiveswithdija.github.io/axis-aesthetic/
 
 ## ✨ Features
 
@@ -23,7 +24,7 @@ It focuses on dynamic graph management, modular UI design, various themes and a 
 
 - HTML5
 - CSS3 (CSS Variables for theming)
-- JavaScript (ES Modules)
+- Vanilla JavaScript (with math.js library)
 
 ---
 
