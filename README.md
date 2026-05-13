@@ -1,4 +1,4 @@
-<img width="1874" height="909" alt="image" src="https://github.com/user-attachments/assets/1a0b9281-6968-4000-a768-4c6f948929f4" /># Curvo Pro 📈
+# Curvo Pro 📈
 
 Curvo is a lightweight, interactive graphing interface built using vanilla HTML, CSS, and JavaScript.  
 It focuses on dynamic graph management, modular UI design, and a various themed visual system.
@@ -6,7 +6,7 @@ It focuses on dynamic graph management, modular UI design, and a various themed 
 ---
 ## 🖼️ Preview
 
-![Curvo UI](<img width="1874" height="909" alt="image" src="https://github.com/user-attachments/assets/8e181e6e-30d5-400a-8462-fa989bffcf56" />
+<img width="1874" height="909" alt="image" src="https://github.com/user-attachments/assets/8e181e6e-30d5-400a-8462-fa989bffcf56" />
 
 ## ✨ Features
 
