@@ -38,13 +38,9 @@ curvo/
 
 ## ⚙️ How to Run
 
-1. Clone the repository:
-2. .
+1. Just open: index.html
 
-
-2. Open `index.html` in your browser.
-
-No build tools required.
+No installation required.
 
 ---
 
