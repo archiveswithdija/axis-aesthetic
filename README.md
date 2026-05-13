@@ -1,7 +1,7 @@
 # Curvo Pro 📈
 
-Curvo is a lightweight, interactive graphing interface built using vanilla HTML, CSS, and JavaScript.  
-It focuses on dynamic graph management, modular UI design, and a various themed visual system.
+Curvo Pro is a lightweight, interactive graphing interface built using vanilla HTML, CSS, and JavaScript.  
+It focuses on dynamic graph management, modular UI design, various themes and a neon visual system.
 
 ---
 ## 🖼️ Preview
