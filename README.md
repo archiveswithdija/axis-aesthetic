@@ -77,4 +77,4 @@ Built as a personal passion project exploring interactive graph systems and UI a
 
 ## 📜 License
 
-This project is open-source for learning purposes.
+This project is open-source for learning purposes. Please refer to the LICENSE file. This is under MIT License.
