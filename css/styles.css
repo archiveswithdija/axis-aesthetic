@@ -1,0 +1,63 @@
+<style>
+    :root {
+      --bg: #1a1a1a;
+      --panel: rgba(40, 40, 40, 0.75);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --glow: 0 0 15px rgba(56,189,248,0.5);
+      --font-main: "Inter", sans-serif;
+      --radius: 20px;
+      --grid-weight: 0.15;
+      --axis-color: #666666;
+      --card-border: 1px solid rgba(255,255,255,0.1);
+      --line-color-1: #38bdf8;
+      --line-color-2: #ff00ff;
+      --line-color-3: #00ffcc;
+      --line-color-4: #ffcc00;
+      --line-color-5: #ff4d4d;
+    }
+
+    /* --- THEME DEFINITIONS --- */
+    body.theme-normal { --bg: #1a1a1a; --panel: rgba(40, 40, 40, 0.75); --text: #e5e7eb; --accent: #38bdf8; --font-main: "Inter", sans-serif; --radius: 20px; --grid-weight: 0.15; --axis-color: #666666; --line-color-1: #38bdf8; --line-color-2: #ff00ff; --line-color-3: #00ffcc; --line-color-4: #ffcc00; --line-color-5: #ff4d4d; }
+    body.theme-light { --bg: #f8f9fa; --panel: rgba(255, 255, 255, 0.9); --text: #1a1a1a; --muted: #6c757d; --accent: #0d6efd; --font-main: "Inter", sans-serif; --radius: 15px; --grid-weight: 0.2; --axis-color: #333333; --card-border: 1px solid rgba(0,0,0,0.1); --line-color-1: #0d6efd; --line-color-2: #d63384; --line-color-3: #0dcaf0; --line-color-4: #ffc107; --line-color-5: #dc3545; }
+    body.theme-dark { --bg: #000000; --panel: rgba(15, 15, 15, 0.85); --text: #00f2ff; --accent: #00f2ff; --font-main: "Inter", sans-serif; --radius: 20px; --grid-weight: 0.25; --axis-color: #00f2ff; --glow: 0 0 20px rgba(0, 242, 255, 0.6); --line-color-1: #00f2ff; --line-color-2: #ff006e; --line-color-3: #8338ec; --line-color-4: #ffbe0b; --line-color-5: #fb5607; }
+    body.theme-paper { --bg: #fdfbf7; --panel: #ffffff; --text: #2c2c2c; --muted: #8e8e8e; --accent: #6b4423; --font-main: "Courier Prime", monospace; --radius: 2px; --grid-weight: 0.3; --axis-color: #000000; --card-border: 1px solid #d4d4d4; --bg-pattern: repeating-linear-gradient(0deg, transparent, transparent 31px, #e8e8e8 31px, #e8e8e8 32px); --line-color-1: #1a5490; --line-color-2: #8b0000; --line-color-3: #006400; --line-color-4: #b8860b; --line-color-5: #4b0082; }
+    body.theme-blueprint { --bg: #0a3d62; --panel: rgba(10, 61, 98, 0.85); --text: #ffffff; --accent: #ffffff; --font-main: "Architects Daughter", cursive; --radius: 0; --grid-weight: 0.4; --axis-color: #ffffff; --bg-pattern: linear-gradient(rgba(255,255,255,0.08) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,0.08) 2px, transparent 2px), linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); --bg-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px; --card-border: 2px solid rgba(255,255,255,0.5); --line-color-1: #00ffff; --line-color-2: #ffff00; --line-color-3: #ff00ff; --line-color-4: #00ff00; --line-color-5: #ff8800; }
+    body.theme-light-academia { --bg: #f4f1ea; --panel: #fefefe; --text: #433d3c; --muted: #8c7851; --accent: #8c7851; --font-main: "STIX Two Text", serif; --radius: 8px; --axis-color: #2c2416; --card-border: 1px solid #d1ccc0; --line-color-1: #7c6f5d; --line-color-2: #9b6b4f; --line-color-3: #5a7359; --line-color-4: #8b6f47; --line-color-5: #6b5d54; }
+    body.theme-dark-academia { --bg: #1a1614; --panel: rgba(40, 35, 31, 0.9); --text: #d4c5b0; --muted: #9b8b7e; --accent: #c9a66b; --font-main: "Playfair Display", serif; --radius: 5px; --axis-color: #d4c5b0; --card-border: 1px solid rgba(201, 166, 107, 0.3); --line-color-1: #c9a66b; --line-color-2: #a67c52; --line-color-3: #8b7355; --line-color-4: #d4a574; --line-color-5: #9d8b6f; }
+    body.theme-coffee { --bg: #2b1a0f; --panel: rgba(59, 39, 26, 0.85); --text: #e6d5c3; --muted: #c4a57b; --accent: #d4a574; --font-main: "Caveat", cursive; --radius: 15px; --axis-color: #d4a574; --card-border: 2px solid rgba(212, 165, 116, 0.4); --line-color-1: #d4a574; --line-color-2: #a67c52; --line-color-3: #8b6f47; --line-color-4: #e6c9a8; --line-color-5: #c19a6b; }
+    body.theme-tea { --bg: #f0ebe3; --panel: rgba(255, 255, 255, 0.8); --text: #4a5759; --muted: #7a8a8c; --accent: #6b8e23; --font-main: "STIX Two Text", serif; --radius: 12px; --axis-color: #556b2f; --card-border: 1px solid #c9d8b6; --line-color-1: #6b8e23; --line-color-2: #8fbc8f; --line-color-3: #556b2f; --line-color-4: #9acd32; --line-color-5: #708238; }
+    body.theme-dreamwave { --bg: #241744; --panel: rgba(48, 25, 82, 0.75); --text: #ff71ce; --accent: #05ffa1; --font-main: "Syncopate", sans-serif; --radius: 30px; --axis-color: #b967ff; --bg-pattern: linear-gradient(180deg, #241744 0%, #603f8b 50%, #b967ff 100%); --glow: 0 0 25px rgba(5, 255, 161, 0.6); --line-color-1: #05ffa1; --line-color-2: #ff71ce; --line-color-3: #b967ff; --line-color-4: #01cdfe; --line-color-5: #fffb96; }
+    body.theme-neon-glitch { --bg: #000000; --panel: rgba(10, 10, 10, 0.95); --text: #ffffff; --accent: #ff0055; --font-main: "Orbitron", sans-serif; --radius: 0; --axis-color: #00fff2; --card-border: 2px solid #ff0055; --line-color-1: #ff0055; --line-color-2: #00fff2; --line-color-3: #ffff00; --line-color-4: #00ff00; --line-color-5: #ff00ff; }
+    body.theme-cyberpunk { --bg: #0f0f23; --panel: rgba(30, 15, 50, 0.8); --text: #00ffff; --accent: #ff00ff; --font-main: "Roboto Mono", monospace; --radius: 5px; --axis-color: #ff00ff; --bg-pattern: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 0, 255, 0.03) 2px, rgba(255, 0, 255, 0.03) 4px); --glow: 0 0 20px rgba(255, 0, 255, 0.5); --card-border: 1px solid rgba(0, 255, 255, 0.4); --line-color-1: #ff00ff; --line-color-2: #00ffff; --line-color-3: #ffff00; --line-color-4: #ff0066; --line-color-5: #00ff99; }
+    body.theme-retro { --bg: #1a1a2e; --panel: rgba(22, 34, 42, 0.9); --text: #eee; --accent: #ff6b6b; --font-main: "VT323", monospace; --radius: 0; --axis-color: #4ecdc4; --card-border: 3px solid #4ecdc4; --line-color-1: #ff6b6b; --line-color-2: #4ecdc4; --line-color-3: #ffe66d; --line-color-4: #a8e6cf; --line-color-5: #ff8b94; }
+    body.theme-space { --bg: #020205; --panel: rgba(10, 10, 20, 0.85); --text: #e0e0ff; --accent: #7d5fff; --font-main: "Space Mono", monospace; --radius: 50px; --axis-color: #6a5acd; --card-border: 1px solid rgba(125, 95, 255, 0.4); --bg-pattern: radial-gradient(circle at 20% 50%, rgba(120, 100, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 100, 200, 0.08) 0%, transparent 50%); --line-color-1: #7d5fff; --line-color-2: #9d4edd; --line-color-3: #5a67d8; --line-color-4: #6366f1; --line-color-5: #8b5cf6; }
+    body.theme-surprise { --bg: #000000; --panel: rgba(20, 20, 20, 0.9); --text: #ffff00; --accent: #ffff00; --font-main: "Press Start 2P", cursive; --radius: 0; --axis-color: #0000ff; --card-border: 4px solid #0000ff; --grid-weight: 0.1; --line-color-1: #ff0000; --line-color-2: #ffb8ff; --line-color-3: #00ffff; --line-color-4: #ffb851; --line-color-5: #ffffff; }
+
+    /* CORE STYLES */
+    body { margin: 0; font-family: var(--font-main); background: var(--bg); background-image: var(--bg-pattern); background-size: var(--bg-size); color: var(--text); display: flex; flex-direction: column; align-items: center; padding: 40px 20px; transition: all 0.4s ease; min-height: 100vh; overflow-x: hidden; position: relative; }
+    h1 { font-size: 3rem; margin: 0; font-weight: 600; text-shadow: var(--glow); text-transform: uppercase; position: relative; z-index: 10; }
+    .subtitle { color: var(--muted); letter-spacing: 2px; margin-bottom: 20px; position: relative; z-index: 10; }
+    .theme-bar { display: flex; gap: 8px; margin: 25px 0; flex-wrap: wrap; justify-content: center; z-index: 10; position: relative; }
+    button.theme-btn { background: var(--panel); border: var(--card-border); color: var(--text); padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 10px; font-family: var(--font-main); transition: 0.3s; text-transform: uppercase; }
+    button.theme-btn:hover { background: var(--accent); color: var(--bg); box-shadow: var(--glow); transform: translateY(-2px); }
+    .app-container { display: flex; gap: 25px; max-width: 1400px; width: 100%; justify-content: center; align-items: flex-start; position: relative; z-index: 5; }
+    .card { background: var(--panel); border: var(--card-border); border-radius: var(--radius); padding: 22px; backdrop-filter: blur(15px); box-shadow: 0 15px 35px rgba(0,0,0,0.3); transition: all 0.3s; }
+    .sidebar { width: 380px; display: flex; flex-direction: column; gap: 20px; }
+    .slider-row { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
+    .slider-row label { width: 20px; font-weight: bold; color: var(--accent); }
+    input[type="range"] { flex-grow: 1; accent-color: var(--accent); cursor: pointer; }
+    .eq-row { display: flex; align-items: center; gap: 10px; background: rgba(0,0,0,0.15); padding: 12px; border-radius: 10px; margin-bottom: 8px; border-left: 4px solid; position: relative; }
+    .eq-row input { background: transparent; border: none; color: var(--text); font-family: var(--font-main); font-size: 1.1rem; width: 100%; outline: none; }
+    .color-picker { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--text); cursor: pointer; }
+    .graph-box { position: relative; flex-grow: 1; }
+    canvas { border-radius: calc(var(--radius) / 2); display: block; width: 100%; background: rgba(255,255,255,0.02); }
+    #coords { position: absolute; top: 20px; right: 20px; background: var(--panel); padding: 8px 15px; border-radius: 5px; font-family: monospace; border: 1px solid var(--accent); color: var(--accent); font-weight: bold; }
+    .keypad { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin-bottom: 15px; }
+    .keypad button { padding: 10px; font-size: 11px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); color: var(--text); cursor: pointer; transition: 0.2s; }
+    .keypad button:hover { background: var(--accent); color: var(--bg); }
+    .section-title { font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px; color: var(--accent); font-weight: 600; }
+    .history-item { background: rgba(0,0,0,0.1); padding: 8px; border-radius: 5px; margin: 5px 0; font-size: 0.9rem; cursor: pointer; border-left: 3px solid var(--accent); }
+    .history-clear { margin-top: 10px; padding: 6px; background: rgba(255,0,0,0.2); border: 1px solid rgba(255,0,0,0.4); color: var(--text); border-radius: 5px; cursor: pointer; font-size: 0.8rem; }
+  </style>
